@@ -1,0 +1,142 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff0f5;
+    text-align: center;
+}
+
+header {
+    background-color: #ff69b4;
+    color: white;
+    padding: 20px;
+    font-size: 24px;
+}
+
+section {
+    margin: 40px;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #ff1493;
+}
+
+/* Timeline Styling */
+.timeline-item {
+    display: flex;
+    align-items: center;
+    background: #ffe4e1;
+    margin: 20px auto;
+    padding: 15px;
+    border-radius: 10px;
+    max-width: 600px;
+    text-align: left;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.timeline-item img {
+    width: 80px;
+    height: 80px;
+    border-radius: 10px;
+    margin-right: 15px;
+    box-shadow: 0 0 5px gray;
+}
+
+/* Gallery */
+.gallery-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.gallery-container img {
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px gray;
+}
+
+/* Lightbox Styling */
+.lightbox {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+}
+
+.lightbox img {
+    max-width: 90%;
+    max-height: 80%;
+    border-radius: 10px;
+}
+
+.close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 40px;
+    color: white;
+    cursor: pointer;
+}
+
+#more-section {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#more-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #ff1493;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#more-btn:hover {
+    background-color: #ff69b4;
+}
+
+.love-page {
+    background: url('5.jpg') no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+}
+
+/* Rose Petal Canvas */
+#roseCanvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 1;
+}
+
+.love-message {
+    font-size: 180px;
+    font-weight: bold;
+    color: white;
+    text-shadow: 6px 6px 15px rgba(0, 0, 0, 0.8);
+    text-align: center;
+    position: relative;
+    z-index: 2;
+}
